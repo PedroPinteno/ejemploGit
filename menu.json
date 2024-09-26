@@ -1,0 +1,59 @@
+[
+    {
+      "nombre": "Menú 1",
+      "submenus": [
+        {
+          "nombre": "Submenú 1.1",
+          "url": "#"
+        },
+        {
+          "nombre": "Submenú 1.2",
+          "url": "#"
+        },
+        {
+          "nombre": "Submenú 1.3",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "nombre": "Menú 2",
+      "submenus": [
+        {
+          "nombre": "Submenú 2.1",
+          "url": "#"
+        },
+        {
+          "nombre": "Submenú 2.2",
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "nombre": "Menú 3",
+      "submenus": [
+        {
+          "nombre": "Submenú 3.1",
+          "url": "#",
+          "submenus": [
+            {
+              "nombre": "Submenú 3.1.1",
+              "url": "#"
+            },
+            {
+              "nombre": "Submenú 3.1.2",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "nombre": "Submenú 3.2",
+          "url": "#"
+        },
+        {
+          "nombre": "Submenú 3.3",
+          "url": "#"
+        }
+      ]
+    }
+  ]

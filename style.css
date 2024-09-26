@@ -1,0 +1,109 @@
+.container {
+    display: flex; /* Utiliza Flexbox para la disposición */
+}
+
+.logo {
+    flex: 1; /* Ocupa 1 parte del espacio total */
+    background-color: lightblue; /* Color de fondo para visualizar */
+}
+
+.menu-container {
+    flex: 2; /* Ocupa 2 partes del espacio total */
+    background-color: lightcoral; /* Color de fondo para visualizar */
+}
+
+nav {
+    display: flex; /* Asegúrate de que el nav use flex para el menú */
+    justify-content: flex-start; /* Alinea el menú a la izquierda */
+    align-items: center; /* Centra verticalmente los elementos del menú */
+    height: 100%; /* Asegura que el nav ocupe toda la altura */
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mantiene el menú en una fila */
+    align-items: center; /* Alinea los elementos del menú verticalmente */
+}
+  
+  .menu > li {
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .menu > li > a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+/* Submenús */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none; /* Se oculta por defecto */
+    position: absolute; /* Posiciona los submenús */
+    top: 100%; /* Se coloca justo debajo del elemento padre */
+    left: 0; /* Se alinea a la izquierda del elemento padre */
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1; /* Asegura que se muestre por encima de otros elementos */
+}
+
+.submenu > li {
+    margin-bottom: 10px;
+}
+
+.submenu > li > a {
+    text-decoration: none;
+    color: #c72020;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para los submenús */
+  .subsubmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1; /* Asegura que se muestre por encima de otros elementos */
+  }
+  
+  .subsubmenu > li {
+    margin-bottom: 10px;
+  }
+  
+  .subsubmenu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .submenu li:hover > .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    display: block;
+    z-index: 1; /* Asegura que se muestre por encima de otros elementos */
+    background-color: #47d0e2; /* Color de fondo */
+  }
+  
+  .subsubmenu > li > a {
+    text-decoration: none;
+    color: #333;
+  }

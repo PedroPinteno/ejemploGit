@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div id="menu-container"></div>
-    <script src="menu.js"></script>
+
+    <header>
+        <div class="container">
+            <div class="logo" style="display: flex; align-items: center;">
+                <!-- <img src="logo.png" alt="logo"> -->
+            </div>
+            <div id="menu-container" class="menu-container" style="display: flex; justify-content: center; align-items: center;">
+                <nav>
+                    <script src="menu.js" defer></script>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
